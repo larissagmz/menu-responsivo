@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./styles/index.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <header>
+            <div class="div-list">
+                <h1>Tech Blog</h1>
+                <ul>
+                    <li>All</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                </ul>
+            </div>
+            <div class="div-pesquisa">
+                <input type="text" id="pesquisa" placeholder="Pesquisa por" />
+                <figure><img src="./image/perfil.png" alt="" /></figure>
+            </div>
+            <button class="botao">
+                <img src="./image/Frame 6.svg" alt="" />
+            </button>
+        </header>
+        <script>
+            document.querySelector(".botao").addEventListener("click", () => {
+                document.querySelector("ul").classList.toggle("hide-ul");
+            });
+        </script>
+    </body>
+</html>
